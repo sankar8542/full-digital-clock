@@ -1,0 +1,150 @@
+##Full Digital Clock##
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Digital clock</title>
+<link rel="stylesheet" href="fulldigitalclock.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+     <!-- <div class='travel'> -->
+		<!-- <h2 id='valid'></h2> -->
+		<!-- <p id='year'></p> -->
+		<!-- <p id='month'></p> -->
+  <!-- </div> -->
+  
+  <div class='images'>
+  
+   <div class='background'>
+   <div class="ground">
+	 <div class='main'>
+		
+		   <h2>Date</h2>
+		   <h2>Month</h2>
+		   <h2>Year</h2>
+		 <div> 
+		   <h2>:</h2>
+		  </div> 
+	  </div>
+        <div class='col'>	  
+		   <p id='months'></p>
+		   <h2>:</h2>
+	       <p id='months1'>00</p>
+		   <h2>:</h2>
+	       <p id='months2'>00</p>
+		  
+	     </div>
+	
+	
+	<div class='years'>
+		
+		   <h2>Hours</h2>
+		    <h2>Minutes</h2>
+			<h2>Seconds</h2>
+	</div>
+      <div class='years1'>	
+		   <p id='digit'></p>
+		   <h2>:</h2>
+		   <p id='digit1'></p> 
+		   <h2>:</h2>
+		   <p id='digit2'></p>
+		
+	</div>
+	
+	 <div class='weekened'>
+	  <input type="radio" id="javascript" name="fav" value="JavaScript">
+	  <label for="javascript" id="javascrip">SUN</label>
+	  <input type="radio" id="javascript1" name="fav" value="JavaScript">
+	  <label for="javascript">MON</label>
+	  <input type="radio" id="javascript2" name="fav" value="JavaScript">
+	  <label for="javascript">TUES</label>
+	  <input type="radio" id="javascript3" name="fav" value="JavaScript">
+	  <label for="javascript">WED</label>
+	   <input type="radio" id="javascript4" name="fav" value="JavaScript">
+	  <label for="javascript">THURS</label>
+	  <input type="radio" id="javascript5" name="fav" value="JavaScript">
+	  <label for="javascript">FRI</label>
+	  <input type="radio" id="javascript6" name="fav" value="JavaScript">
+	  <label for="javascript">SAT</label>
+	</div>
+	
+	 <div class='day'>
+	  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+	  <label for="javascript">AM</label><br><br>
+	  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+	  <label for="javascript">PM</label>
+    </div>
+	
+	  <div class='tempature'>
+	    <h2>Temp</h2>
+		<h1>27</h1>
+		<p>c</p>
+	  </div>
+	</div>
+	</div>
+	</div>
+<script>
+
+setInterval(()=>{
+      let day=new Date();
+	  let hour=day.getHours();
+	  let min=day.getMinutes();
+	  let sec=day.getSeconds();
+	  let date=day.getDate();
+	  let days=day.getDay();
+	  let month=day.getMonth();
+	  let year=day.getFullYear();
+	  document.getElementById('digit').innerHTML=hour;
+	  document.getElementById('digit1').innerHTML=min;
+	  document.getElementById('digit2').innerHTML=sec;
+	  console.log(year)
+	  console.log(month)
+	  console.log(days)
+	  document.getElementById('months').innerHTML=date;
+	  document.getElementById('months1').innerHTML=month;
+	  document.getElementById('months2').innerHTML=year;
+	  
+	   if(hour<10){
+	         document.getElementById('digit').innerHTML="0"+hour;
+	   }
+	    if(min<10){
+	         document.getElementById('digit1').innerHTML="0"+Minutes;
+	   }
+
+	  
+	   if(days==0){
+	     document.getElementById('javascript').innerHTML="sunday";
+	   }
+	   else if(days==1){
+	      document.getElementById('javascript1').innerHTML="monday";
+	   }
+	   else if(days==2){
+	      document.getElementById('javascript2').innerHTML="Tuesday";
+	   }
+	   else if(days==3){
+	      document.getElementById('javascript3').innerHTML="Wednesday";
+	   }
+	   else if(days==4){
+	      document.getElementById('javascript4').innerHTML="Thursday";
+	   }
+	   else if(days==5){
+	      document.getElementById('javascript5').innerHTML="Friday";
+	   }
+	   else if(days==6){
+	      document.getElementById('javascript6').innerHTML="Staturday";
+	   }
+
+   })
+</script>
+</script>
+</body>
+</html> 

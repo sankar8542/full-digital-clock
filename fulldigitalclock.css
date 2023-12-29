@@ -1,0 +1,115 @@
+	.images{
+		background-image:url("wall.jpg");
+		background-repeat:norepeat;
+	}
+	.background{
+		background-color:black;
+		width:50rem;
+		height:42rem;
+		margin-top:2rem;
+		margin-left:4rem;
+		
+	}
+.ground{
+			border:2px solid white;
+			border-radius:2rem;
+			width:45rem;
+			height:37rem;
+			margin-left:2rem;
+			margin-top:2rem;
+}
+	.main{
+		margin-top:1rem;
+	   display:flex;
+	   gap:6rem;
+	   margin-left:12rem;
+	   color:white;
+	}
+	.col{
+		display:flex;
+		margin-left:8rem;
+		gap:3rem;
+		border: 2px solid white;
+		border-radius:2rem;
+		width:30rem;
+		height:8rem;
+	}
+	.years{
+		  display:flex;
+		  gap:6rem;
+	      margin-left:10rem;
+		  color:white;
+	}
+	.years1{
+		display:flex;
+		border: 2px solid white;
+		border-radius:2rem;
+		margin-left:2rem;
+		width:40rem;
+		height:7rem;
+	}
+     .weekened{
+		 margin-top:1rem;
+		 margin-left:6rem;
+		 color:white;
+		 
+	  }
+      .day{
+		  margin-top:2rem;
+		  margin-left:34rem;
+		  color:white;
+	  }
+	  #months{
+		  margin-left:5rem;
+		  font-size:3rem;
+		  color:#00ff00;
+		
+	  }
+	  #months1{
+		  margin-left:1rem;
+		  font-size:3rem;
+		  color:#00ff00;
+	  }
+	  #months2{
+		  /* margin-left:1rem; */
+		  font-size:3rem;
+		  color:#00ff00;
+	  }
+	  #digit{
+		  margin-left:9rem;
+		  font-size:3rem;
+		  color:#00ff00;
+	  }
+	  #digit1{
+		  margin-left:4rem;
+		  font-size:3rem;
+		  color:#00ff00;
+	  }
+	  #digit2{
+		  margin-left:5rem;
+		  font-size:3rem;
+		  color:#00ff00;
+	  }
+	  .col h2{
+		  margin-top:3rem;
+		  color:#00ff00;
+		  font-size:3rem;
+	  }
+	  .years1 h2{
+		   color:#00ff00;
+		   font-size:3rem;
+		   margin-left:2rem;
+	  }
+	  .tempature{
+		  gap:1rem;
+		  display:flex;
+		  color:white;
+		  margin-left:15rem;
+		  margin-top:-3rem;
+		 
+	  }
+	  .tempature h1{
+		   color:#00ff00;
+		   border: 2px solid white;
+	  }
+	  

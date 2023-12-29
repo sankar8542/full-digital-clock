@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>instagram page</title>
+<link rel="stylesheet" href="linkbutton.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+
+   .san{
+      display:flex;
+	  gap:2rem;
+   }
+   textarea, input{
+       visibility:hidden;
+   }
+</style>
+</head>
+<body>
+  <div class='san'>
+   <div>
+        <iconify-icon icon="icon-park-outline:like" id='acer' onclick='myfun1()'></iconify-icon>
+		  <h1 id='cols'></h1>
+   </div>
+   
+   <div>
+         <button><iconify-icon icon="pajamas:comments" onclick='fun()' id='con'></iconify-icon></button>
+		   <input type='text' id='close'>
+		   <input onclick='funMy()' type='submit' id='close2'>
+		   <textarea name='' rows='5' cols='50' id='comment' placeholder='typing a comment'></textarea>
+		   
+   </div>
+   </div>
+<script>
+     let count=0;
+ 
+     function myfun1(){
+         document.getElementById("acer").style.color="blue";
+		 count++;
+         document.getElementById("cols").innerHTML=count;
+		      	 
+  }
+    function fun(){
+      document.getElementById("close").style.visibility='visible';
+      document.getElementById("close2").style.visibility='visible';
+	  
+  }
+  function funMy(){
+        document.getElementById("comment").style.visibility='visible';
+		let a=document.getElementById("close").value;
+		console.log(a)
+		document.getElementById("comment").innerHTML=a;
+		document.getElementById("close").value="";
+  }
+</script>
+</body>
+</html> 
